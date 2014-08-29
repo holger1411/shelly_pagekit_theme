@@ -9,6 +9,7 @@
         @section('head')
         <link rel="stylesheet" href="themes/shelly/css/uikit.min.css">
          <link rel="stylesheet" href="themes/shelly/css/style.css">
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         @script('jquery')
         @script('uikit')
     </head>
@@ -23,7 +24,13 @@
             		<h1 class="website_title"><a href="@url()" class="tm-brand">Shelly</a></h1>
                      <nav class="uk-navbar">
                         @section('navbar', ['renderer' => 'navbar'])
+                        <span class="sm_icons" style="float:right; width:auto;">
+                            <a href="https://twitter.com/holger1411" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/holger1411/shelly_pagekit_theme" target="_blank"><i class="fa fa-github"></i></a>
+
+                        </span>
                      </nav>
+
                 </div>
             </div>
          </div>
