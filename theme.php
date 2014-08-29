@@ -8,6 +8,7 @@ return [
         'navbar'     => 'Navbar',
         'sidebar'     => 'Sidebar',
         'footer'     => 'Footer',
+            'credits'     => 'Credits',
         'hero'     => 'Hero',
         'top'     => 'Top',
         'bottom'     => 'Bottom',

@@ -85,7 +85,7 @@
     
 @if (hasSection('bottom'))
     <!-- Top Content Wrapper -->
-    <div class="wrapper wrapper_bottom">
+    <div class="wrapper wrapper_bottom parallax"  data-0="background-position:0px -100px;" data-end="background-position:0px 800px;" style="background: url(themes/shelly/img/hero6.jpg);background-size:cover;">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
                          @section('bottom', ['renderer' => 'grid'])
@@ -94,14 +94,27 @@
     </div>
 @endif
 
-    <!-- Footer Wrapper -->
+@if (hasSection('footer'))
+    <!-- Hero Wrapper -->
     <div class="wrapper wrapper_footer">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                          @section('footer', ['renderer' => 'grid'])
+                    </div>
+            </div>
+         </div>
+    </div>
+@endif
+
+    <!-- Credits Wrapper -->
+    <div class="wrapper wrapper_credits">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
                 <div class="uk-width-1-1">
                      <footer>
-                     @if (hasSection('footer'))
-                         @section('footer')
+                     @if (hasSection('credits'))
+                          @section('credits', ['renderer' => 'grid'])
                          <hr/>
                          @endif
                          Design by <a href="http://www.holgerkoenemann.de">Holger Koenemann</a>
@@ -110,5 +123,13 @@
             </div>
          </div>
     </div>
+    
+    <!-- Extra Script Stuff -->
+    <script src="themes/shelly/js/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init(
+                smoothScrolling=true
+        );
+    </script>
     </body>
 </html>
