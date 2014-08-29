@@ -10,6 +10,11 @@ Live Demo: http://www.holgerkoenemann.de/pagekit
 Author: http://www.holgerkoenemann.de
 
 Releases
+0.1.6 	Aug 29, 2014
+        - Skrollr script added - https://github.com/Prinzhorn/skrollr
+        - Credits Widget Area added
+        - Font Awesome added
+        
 0.1.5 	Aug 29, 2014
         - Color set changes
         - Bug fixing
