@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="@url('extension://system/theme/favicon.ico')" rel="shortcut icon" type="image/x-icon">
+        <link href="@url('extension://system/theme/apple_touch_icon.png')" rel="apple-touch-icon-precomposed">
+        @section('head')
+        <link rel="stylesheet" href="themes/shelly/css/uikit.min.css">
+         <link rel="stylesheet" href="themes/shelly/css/style.css">
+        @script('jquery')
+        @script('uikit')
+    </head>
+    <body>
+
+    <!-- Nav Wrapper -->
+
+    <div class="wrapper wrapper_nav" data-uk-sticky="">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+            	<div class="uk-width-1-1">
+            		<h1 class="website_title"><a href="@url()" class="tm-brand">Shelly</a></h1>
+                     <nav class="uk-navbar">
+                        @section('navbar', ['renderer' => 'navbar'])
+                     </nav>
+                </div>
+            </div>
+         </div>
+    </div>
+
+
+@if (hasSection('hero'))
+    <!-- Hero Wrapper -->
+    <div class="wrapper wrapper_hero">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                         @section('hero')
+                    </div>
+            </div>
+         </div>
+    </div>
+@endif
+
+@if (hasSection('top'))
+    <!-- Top Content Wrapper -->
+    <div class="wrapper wrapper_top">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                   @section('top', ['renderer' => 'grid'])
+            </div>
+         </div>
+    </div>
+@endif
+
+    <!-- Main Content Wrapper -->
+    <div class="wrapper wrapper_main">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                    @if (hasSection('sidebar'))
+                    <div class="uk-width-2-3">
+                    @else
+                    <div class="uk-width-1-1">
+                    @endif
+                        @section('messages')
+                        @section('content')
+                    </div>
+
+                    @if (hasSection('sidebar'))
+                    <div class="uk-width-1-3">
+                        @section('sidebar', ['renderer' => 'panel'])
+                    </div>
+                    @endif
+            </div>
+         </div>
+    </div>
+    
+@if (hasSection('bottom'))
+    <!-- Top Content Wrapper -->
+    <div class="wrapper wrapper_bottom">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                         @section('bottom', ['renderer' => 'grid'])
+            </div>
+         </div>
+    </div>
+@endif
+
+    <!-- Footer Wrapper -->
+    <div class="wrapper wrapper_footer">
+         <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                     <footer>
+                     @if (hasSection('footer'))
+                         @section('footer')
+                         <hr/>
+                         @endif
+                         Design by <a href="http://www.holgerkoenemann.de">Holger Koenemann</a>
+                     </footer>
+                </div>
+            </div>
+         </div>
+    </div>
+    </body>
+</html>

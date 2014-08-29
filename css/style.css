@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+/*
+ * Globals
+ * Basic Styling for Global HTML Elements
+ */
+
+body {
+  font-family: 'Lato', 'sans-serif';
+  font-weight: lighter;
+  color: #999;
+  line-height:1.7em;
+  background-color:#202020;
+    font-size:17px;
+}
+
+a {color:#3DC0F1;}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #999;
+}
+.wrapper.wrapper_main h1, .wrapper.wrapper_main h2, .wrapper.wrapper_main h3, .wrapper.wrapper_main h4, .wrapper.wrapper_main h5, .wrapper.wrapper_main h6 {color:#000;}
+
+/*
+* Helper classes
+*/
+.leading {font-size:1.5em; font-weight: lighter;}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+/*
+* UI KIT Resets
+* Resets some of the UI Kit Default stylings
+*/
+
+.uk-navbar {background:none;}
+.uk-navbar-nav li a{color:#fff;}
+.uk-navbar-nav li.uk-active a, .uk-navbar-nav li a:hover{background-color:#2EA4D5;color:#fff;}
+
+
+/*
+* Basic Layout
+* For Wrappers, Container, Rows etc.
+*/
+
+.wrapper {padding:100px 0;}
+.wrapper.wrapper_nav {background:#3DC0F1; color:#fff;padding:0}
+.wrapper.wrapper_hero {background:#2EA4D5; color:#fff; }
+.wrapper.wrapper_hero h2 {font-size:10em; line-height: 1em; color:#fff; font-weight:bold;}
+.wrapper.wrapper_main {background:#fff;color:#444;}
+.wrapper.wrapper_footer {padding:40px 0; font-size:.875em;color:#999;}
+.wrapper.wrapper_top, .wrapper.wrapper_bottom{background-color:#262626;}
+
+
+/*
+* Specific Typo
+*/
+
+h1.website_title {float:left; width:auto;color:#fff; font-size:.875em; text-transform:uppercase;line-height:1em; padding:5px 10px; margin:6px 20px 6px 0; border:1px solid #fff;}
+h1.website_title a {color:#fff; text-decoration:none;}

@@ -1,0 +1,18 @@
+{
+    "name": "Shelly",
+    "version": "0.1.3",
+    "type": "theme",
+    "title": "Shelly",
+    "description": "A first barebone Pagekit Theme",
+    "license": "",
+    "authors": [
+        {
+            "name": "Holger Koenemann",
+            "email": "office@holgerkoenemann.de",
+            "homepage": "http://www.holgerkoenemann.de"
+        }
+    ],
+    "extra": {
+      "image": "theme.jpg"
+    }
+}
