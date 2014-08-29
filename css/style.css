@@ -57,12 +57,13 @@ h6, .h6 {
 .wrapper.wrapper_nav {background:#FFD300; color:#fff;padding:20px 0}
 .wrapper.wrapper_hero, .wrapper.wrapper_footer {background:#FFD300; color:#000; }
 .wrapper.wrapper_hero h2 {font-size:10em; line-height: 1em; color:#000; font-weight:bold;}
-.wrapper.wrapper_main {background:#fff;color:#444;}
-.wrapper.wrapper_credits {padding:40px 0; font-size:.875em;}
+.wrapper.wrapper_main {background:#fff;color:#444; background-size: cover;}
+.wrapper.wrapper_credits {padding:40px 0; font-size:.75em;}
 .wrapper.wrapper_top {background-color:#282828;} 
-.wrapper.wrapper_bottom{background-color:#f8f8f8;color:#fff;}
+.wrapper.wrapper_bottom{background-color:#f8f8f8;color:#fff;background: url(../img/hero6.jpg);}
 .wrapper.wrapper_bottom h1, .wrapper.wrapper_bottom h2, .wrapper.wrapper_bottom h3, .wrapper.wrapper_bottom h4, .wrapper.wrapper_bottom h5, .wrapper.wrapper_bottom h6 {color:#fff;}
-
+.wrapper.wrapper_footer h1, .wrapper.wrapper_footer h2, .wrapper.wrapper_footer h3, .wrapper.wrapper_footer h4, .wrapper.wrapper_footer h5, .wrapper.wrapper_footer h6 {color:#000;}
+.wrapper.wrapper_credits hr {background:#444;border:none; border-bottom:1px solid #303030;margin-top:40px;}
 
 /*
 * Specific Typo

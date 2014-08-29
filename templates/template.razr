@@ -85,7 +85,7 @@
     
 @if (hasSection('bottom'))
     <!-- Top Content Wrapper -->
-    <div class="wrapper wrapper_bottom parallax"  data-0="background-position:0px -100px;" data-end="background-position:0px 800px;" style="background: url(themes/shelly/img/hero6.jpg);background-size:cover;">
+    <div class="wrapper wrapper_bottom parallax"  data-0="background-position:0px 600px;" data-end="background-position:0px 800px;" style="background-size:cover;">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
                          @section('bottom', ['renderer' => 'grid'])
@@ -99,9 +99,7 @@
     <div class="wrapper wrapper_footer">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
-                    <div class="uk-width-1-1">
                           @section('footer', ['renderer' => 'grid'])
-                    </div>
             </div>
          </div>
     </div>
@@ -111,15 +109,16 @@
     <div class="wrapper wrapper_credits">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
-                <div class="uk-width-1-1">
-                     <footer>
                      @if (hasSection('credits'))
                           @section('credits', ['renderer' => 'grid'])
-                         <hr/>
+                         
                          @endif
+                         <div class="uk-width-1-1 text-center">
+                          @if (hasSection('credits'))
+                         <hr/>
+                           @endif
                          Design by <a href="http://www.holgerkoenemann.de">Holger Koenemann</a>
-                     </footer>
-                </div>
+                         </div>
             </div>
          </div>
     </div>
