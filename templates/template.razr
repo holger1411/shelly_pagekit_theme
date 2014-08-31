@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <link href="@url('extension://system/theme/favicon.ico')" rel="shortcut icon" type="image/x-icon">
         <link href="@url('extension://system/theme/apple_touch_icon.png')" rel="apple-touch-icon-precomposed">
         @section('head')
@@ -13,7 +13,8 @@
         @script('jquery')
         @script('uikit')
     </head>
-    <body>
+   
+  <body id="skrollr-body">
 
     <!-- Nav Wrapper -->
 
@@ -85,7 +86,7 @@
     
 @if (hasSection('bottom'))
     <!-- Top Content Wrapper -->
-    <div class="wrapper wrapper_bottom parallax"  data-0="background-position:0px 600px;" data-end="background-position:0px 800px;" style="background-size:cover;">
+    <div class="wrapper wrapper_bottom parallax"  data-0="background-position:0px 0px" data-end="background-position:0px -200px ;" style="background-size:cover;">
          <div class="uk-container uk-container-center">
             <div class="uk-grid">
                          @section('bottom', ['renderer' => 'grid'])
