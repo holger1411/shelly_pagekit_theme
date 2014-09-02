@@ -26,7 +26,7 @@
                      <nav class="uk-navbar">
                         @section('navbar', ['renderer' => 'navbar'])
                         <span class="sm_icons" style="float:right; width:auto;">
-                            <a href="https://twitter.com/holger1411" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://twitter.com/themes4pagekit" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="https://github.com/holger1411/shelly_pagekit_theme" target="_blank"><i class="fa fa-github"></i></a>
 
                         </span>
@@ -118,7 +118,7 @@
                           @if (hasSection('credits'))
                          <hr/>
                            @endif
-                         Design by <a href="http://www.holgerkoenemann.de">Holger Koenemann</a>
+                         Created by <a href="http://ww.themes4pagekit.com" target="_blank">Themes 4 Pagekit</a>
                          </div>
             </div>
          </div>

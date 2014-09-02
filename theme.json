@@ -1,6 +1,6 @@
 {
     "name": "Shelly",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "type": "theme",
     "title": "Shelly",
     "description": "A first barebone Pagekit Theme",
@@ -8,8 +8,8 @@
     "authors": [
         {
             "name": "Holger Koenemann",
-            "email": "office@holgerkoenemann.de",
-            "homepage": "http://www.holgerkoenemann.de"
+            "email": "hello@themes4pagekit.com",
+            "homepage": "http://www.themes4pagekit.com"
         }
     ],
     "extra": {
