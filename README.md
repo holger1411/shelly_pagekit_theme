@@ -10,6 +10,7 @@ Live Demo: http://www.holgerkoenemann.de/pagekit
 Author: http://www.holgerkoenemann.de
 
 Releases:
+
 0.1.7 -	Sep 02, 2014
 
         - Rebranding to themes4pagekit.com
