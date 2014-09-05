@@ -1,12 +1,8 @@
 @foreach ($value as $widget)
-    @if ($widget.type == 'widget.menu')
-
-    @raw($widget.render(array_merge(['layout' => 'theme://shelly/views/widgets/menu/navbar.razr'], $options)))
-
-    @else
-
-    @raw($widget.render($options))
-
-    @endif
+@if ($widget.type == 'widget.menu')
+@raw($widget.render(array_merge(['layout' => 'extension://system/views/widgets/menu/navbar.razr'], $options)))
+@else
+@raw($widget.render($options))
+@endif
 @endforeach
 
